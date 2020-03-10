@@ -1,9 +1,9 @@
-const IDEConsole = console;
-function getIDEConsole(msg){
-  IDEConsole.log(msg);
+const IDBConsole = console;
+function getIDBConsole(msg){
+  IDBConsole.log(msg);
 }
-//IDE의 생성자
-class IDE{
+//IDB의 생성자
+class IDB{
   constructor(viewerId){
     this.camera;
     this.render = new Renderer(viewerId);
@@ -32,7 +32,7 @@ class Renderer{
     this.viewer = document.getElementById(viewerId);
     viewer.appendChild(this.canvas);
     this.ctx = this.canvas.getContext('2d');
-    getIDEConsole("canvas생성");
+    getIDBConsole("canvas생성");
   }
 
   //씬 객체를 받아서 그 안에 있는 객체들을 그려준다.
@@ -57,7 +57,7 @@ class Object {
 }
 class Shape extends Object{
   constructor(){
-    getIDEConsole(this);
+    getIDBConsole(this);
   }
 
 }

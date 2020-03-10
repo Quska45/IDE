@@ -1,5 +1,5 @@
-//IDE의 생성자
-class IDE{
+//IDB의 생성자
+class IDB{
   constructor(viewerId){
     this.camera;
     this.render = new Renderer(viewerId);

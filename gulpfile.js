@@ -4,20 +4,20 @@ const concat = require('gulp-concat');
 
 var concatList = [
     //콘솔
-    "./IDE.Console/IDE.Console.js",
+    "./IDB.Console/IDB.Console.js",
 
     //생성자
-    "./IDE/IDE.js",
+    "./IDB/IDB.js",
 
     //렌더러
-    "./IDE.Renderer/IDE.Renderer.js",
+    "./IDB.Renderer/IDB.Renderer.js",
 
     //씬
-    "./IDE.Scene/IDE.Scene.js",
+    "./IDB.Scene/IDB.Scene.js",
 
     //객체
-    "./IDE.Object/IDE.Object.js",
-    "./IDE.Object/IDE.Shape.js"
+    "./IDB.Object/IDB.Object.js",
+    "./IDB.Object/IDB.Shape.js"
 
 ];
 
