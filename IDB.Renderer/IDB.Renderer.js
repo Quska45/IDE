@@ -4,7 +4,7 @@ class Renderer{
     this.viewer = document.getElementById(viewerId);
     viewer.appendChild(this.canvas);
     this.ctx = this.canvas.getContext('2d');
-    getIDBConsole("canvas생성");
+    getDefaultIDBConsole("canvas생성");
   }
 
   //씬 객체를 받아서 그 안에 있는 객체들을 그려준다.
@@ -12,7 +12,7 @@ class Renderer{
     //canvas 초기화
     this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
     scene.children.reduce(function(acc, cur, i){
-      scene.children.draw(ctx);
+      cur.draw(ctx);
     }, scene)
   }
 }

@@ -13,11 +13,20 @@
 <script src="./IDB/IDB.js"></script>
 <script src="./IDB.Renderer/IDB.Renderer.js"></script>
 <script src="./IDB.Scene/IDB.Scene.js"></script>
-<script src="./IDB.Object/IDB.Object.js"></script>
-<script src="./IDB.Object/IDB.Shape.js"></script>
+<script src="./IDB.Object2D/IDB.Object2D.js"></script>
+<script src="./IDB.Object2D/IDB.Shape.js"></script>
 <script>
-  var IDB = new IDB("viewer");
+  var IDBObj = new IDB("viewer");
   
-  IDB.run();
+  IDBObj.run();
+  
+  //이미지 추가
+  var characterImage = new Image();
+  characterImage.src = "./image/나연.jpg";
+  var character = new Object2D();
+  IDBObj.addObject(character);
+  characterImage.onload = function(){
+    character.image = characterImage;
+  }
 </script>
 </html>
