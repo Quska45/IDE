@@ -21,6 +21,6 @@ class Object2D {
     //현재 그려진 경로만큼 잘라내기 해주는 기능이다.
     ctx.clip();
     //잘라내진 경로에 그림을 그린다.
-    ctx.drawImage(this.image, this.position.x, this.position.y);
+    ctx.drawImage(this.image, this.position.x, this.position.y, this.scale.width, this.scale.height);
   }
 }
